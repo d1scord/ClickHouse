@@ -193,7 +193,7 @@ private:
     std::vector<StringRef> getKeys() const;
 
     template <typename T>
-    std::vector<StringRef> getKeys(const Attribute& attribute) const;
+    std::vector<StringRef> getKeys(const Attribute & attribute) const;
 
     const std::string name;
     const DictionaryStructure dict_struct;
