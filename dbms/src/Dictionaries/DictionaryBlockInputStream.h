@@ -22,9 +22,9 @@ template <class DictionaryType, class Key>
 class DictionaryBlockInputStream : public DictionaryBlockInputStreamBase
 {
 public:
-    DictionaryBlockInputStream(const DictionaryType& dictionary,
+    DictionaryBlockInputStream(const DictionaryType & dictionary,
                                const PaddedPODArray<Key> & ids, const Names & column_names);
-    DictionaryBlockInputStream(const DictionaryType& dictionary,
+    DictionaryBlockInputStream(const DictionaryType & dictionary,
                                const std::vector<StringRef> & keys, const Names & column_names);
 
     String getName() const override { return "DictionaryBlockInputStream"; }
