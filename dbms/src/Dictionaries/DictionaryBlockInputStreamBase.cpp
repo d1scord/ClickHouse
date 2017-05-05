@@ -6,7 +6,7 @@ namespace DB
 String DictionaryBlockInputStreamBase::getID() const
 {
     std::stringstream ss;
-    ss << static_cast<const void*> (this);
+    ss << static_cast<const void*>(this);
     return ss.str();
 }
 
